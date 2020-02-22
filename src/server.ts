@@ -3,6 +3,8 @@ import path from 'path';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import exphbs from 'express-handlebars';
+// @ts-ignore
+import indexRoutes from './routes/IndexRoutes'
 
 // Initializations
 const app = express();
@@ -27,9 +29,7 @@ app.use(helmet());
 // Global Variables
 
 // Routes
-app.get('/', (req, res) => {
-    res.render('index');
-});
+app.use(indexRoutes);
 
 // Static files
 app.use(express.static(path.resolve('src/public')));

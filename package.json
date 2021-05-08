@@ -31,7 +31,7 @@
     "@types/helmet": "0.0.45",
     "@types/mongoose": "^5.7.1",
     "@types/morgan": "^1.7.37",
-    "handlebars": "^4.7.3",
+    "handlebars": "^4.7.7",
     "nodemon": "^2.0.2",
     "npm-check-updates": "^4.0.1",
     "typescript": "^3.8.2"
